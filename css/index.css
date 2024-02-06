@@ -1,0 +1,373 @@
+  :root {
+      --primary-color: #3498db;
+      --secondary-color: #ff7e40;
+  }
+
+  .hero_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .hero_text h1 {
+      width: 100%;
+      font-size: 50px;
+  }
+
+  .hero_text p {
+      margin-block: 25px;
+  }
+
+  .hero_btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+  }
+
+  .play_demo {
+      font-family: 'Philosopher', sans-serif;
+      color: #000;
+      font-size: 20px;
+  }
+
+  .play_demo span {
+      color: var(--primary-color);
+      padding-right: 20px;
+  }
+
+  .hero_btn button {
+      padding: 15px 45px;
+      border: 5px solid #fff;
+      background-color: var(--secondary-color);
+  }
+
+  .hero_btn button a {
+      color: #fff;
+  }
+
+  .hero_swiper {
+      overflow-x: hidden;
+  }
+
+  .swiper {
+      width: 100%;
+      height: 100%;
+  }
+
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .support {
+      width: 70%;
+      margin: 0 15%;
+      margin-top: 70px;
+      background-color: #ffffffff;
+      padding: 5%;
+      padding-block: 40px;
+  }
+
+  .support_title {
+      text-align: center;
+  }
+
+  .support_title h1 {
+      font-size: 35px;
+  }
+
+  .support_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .support_box {
+      margin-top: 30px;
+      width: 95%;
+      text-align: center;
+  }
+
+  .support_box h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+  }
+
+  .typed-text {
+      font-family: 'Philosopher', sans-serif;
+      color: var(--primary-color);
+  }
+
+  .about_all {
+      margin: 0 7%;
+      margin-top: 70px;
+      background-color: #fff;
+      padding: 0 5%;
+      padding-block: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .about_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about_all:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about_title h1 {
+      font-size: 40px;
+
+  }
+
+  .about_title me,
+  .about_title span {
+      font-family: 'Philosopher', sans-serif;
+      color: var(--primary-color);
+  }
+
+  .about_title me {
+      color: var(--secondary-color);
+  }
+
+  .about_title,
+  .about_btn {
+      width: 100%;
+  }
+
+  .about_story {
+      padding-block: 30px;
+  }
+
+  .about_btn button {
+      background-color: var(--primary-color);
+      padding: 15px 45px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .about_btn button:hover {
+      background-color: var(--secondary-color);
+  }
+
+  .about_btn button a {
+      color: #fff;
+
+  }
+
+  .about_btn span {
+      padding-right: 10px;
+  }
+
+  .about_img {
+      width: 95%;
+      overflow-x: hidden;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      font-family: swiper-icons;
+      font-size: 20px !important;
+      text-transform: none !important;
+      letter-spacing: 0;
+      font-variant: initial;
+  }
+
+  .pricing_all {
+      margin-top: 70px;
+      padding: 0 7%;
+  }
+
+  .pricing_title {
+      text-align: center;
+  }
+
+  .pricing_title h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+  }
+
+  .pricing_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 15%;
+  }
+
+  .pricing_card {
+      width: 90%;
+      background-color: #fff;
+      margin-top: 50px;
+      padding: 0 5%;
+      padding-block: 30px;
+      text-align: center;
+      position: relative;
+
+  }
+
+
+
+  .price {
+      margin: auto;
+      margin-block: 30px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary-color);
+      color: #fff;
+  }
+
+  .pricing_card:hover,
+  .price:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .ribbon {
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      z-index: 1;
+      overflow: hidden;
+      width: 75px;
+      height: 75px;
+      text-align: right;
+  }
+
+  .ribbon span {
+      font-size: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      line-height: 20px;
+      transform: rotate(45deg);
+      width: 100px;
+      display: block;
+      background: #79A70A;
+      background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+      box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+      position: absolute;
+      top: 19px;
+      right: -21px;
+  }
+
+  .ribbon span::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 100%;
+      z-index: -1;
+      border-left: 3px solid #79A70A;
+      border-right: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid #79A70A;
+  }
+
+  .ribbon span::after {
+      content: '';
+      position: absolute;
+      right: 0%;
+      top: 100%;
+      z-index: -1;
+      border-right: 3px solid #79A70A;
+      border-left: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid #79A70A;
+  }
+
+  .red span {
+      background: linear-gradient(#F70505 0%, #8F0808 100%);
+  }
+
+  .red span::before {
+      border-left-color: #8F0808;
+      border-top-color: #8F0808;
+  }
+
+  .red span::after {
+      border-right-color: #8F0808;
+      border-top-color: #8F0808;
+  }
+
+
+  .map iframe {
+      width: 100%;
+      height: 500px;
+      margin-top: 70px;
+  }
+
+  @media (max-width: 1100px) {
+      .hero_all {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .hero_swiper {
+          margin-top: 50px;
+      }
+
+      .support {
+          width: 90%;
+          margin: 0 5%;
+          margin-top: 50px;
+      }
+
+      .support_grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+          .about_all{
+            display: flex;
+            flex-direction: column;
+          }
+                   .pricing_grid {
+                       display: grid;
+                       grid-template-columns: 1fr ;
+                       padding: 0 ;
+                   }
+                   .pricing_card{
+                    width: 100%;
+                   }
+  }
+
+  @media (max-width: 800px) {
+    .hero_btn{
+        display: grid;
+            grid-template-columns: 1fr;
+    }
+      .support_grid {
+          display: grid;
+          grid-template-columns: 1fr ;
+      }
+      footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .copyright{
+        margin-top: 20px;
+      }
+          .hero_text h1 {
+              width: 100%;
+              font-size: 40px;
+          }
+  }

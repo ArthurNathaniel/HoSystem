@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ff7e40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fbf5e0;
+    /* background-color: #d5d5d4; */
+}
+
+h1,
+h2,
+h3,
+h4 h5,
+h6 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.navbar_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    background-color: #fff;
+    padding-block: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 445;
+}
+
+.logo {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-family: 'Philosopher', sans-serif;
+}
+
+.nav_links a {
+    padding: 30px;
+    color: #383837de;
+}
+
+.get_started a {
+    padding: 13px 30px;
+    border: 1px solid;
+    background-color: var(--secondary-color);
+    color: #fffdf6;
+    border: none;
+}
+
+.hero_all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 7%;
+    padding-top: 40px;
+}
+
+.logo_name {
+    font-family: 'Philosopher', sans-serif;
+}
+
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7%;
+    padding-block: 20px;
+}
+
+footer a {
+    color: #000;
+}
+
+.mobile_links {
+    display: none;
+}
+
+.toggle-icon {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+
+    .mobile_links,
+    .get_started {
+        display: none;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .toggle-icon {
+        display: block;
+    }
+
+    .mobile_links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #fff;
+        left: 0;
+        width: 50%;
+    }
+
+    .mobile_links a {
+        padding-block: 10px;
+        padding-left: 13%;
+        color: #434343c2;
+        border-top: 1px solid;
+
+    }
+
+    .demo_mobile {
+        background-color: var(--secondary-color);
+        border: none !important;
+        color: #fff !important;
+    }
+}
